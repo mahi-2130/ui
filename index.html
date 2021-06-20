@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>   
+            function welcome() {   
+            window.open("http://127.0.0.1:5000/");  
+            }   
+        </script> 
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li onclick="welcome()"><a href="">Predict</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <a href="" class="btn" onclick="welcome()">Predict Tumor</a>
+                <h1>Brain Tumor Detection</h1>
+                <p>Brain cancer is one of the dangerous diseases globally.
+                    Various image techniques<br> such as Computed Tomography (CT), Magnetic  Resonance Imaging (MRI)<br> and ultrasound image are used to evaluate the  tumor in a brainIn this work,<br> automatic brain tumor detection is proposed by using
+                    Convolutional Neural <br>Networks (CNN) classification.  It helps in early detection of brain tumors
+                    </p>
+                <div class="arrow-icons">
+                    <img src="back-arrow.png">
+                    <img src="next-arrow.png" onclick="welcome()">
+                </div>
+            </div>
+            <img src="brain_icon.svg" class="feature-img">
+        </div>
+    </body>
+</html>
